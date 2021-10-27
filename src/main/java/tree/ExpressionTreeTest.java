@@ -6,6 +6,7 @@ import java.time.format.DateTimeFormatter;
 public class ExpressionTreeTest {
     /**Method thats constructs the expression tree**/
     public ExpressionTreeTest() {
+
         /** Creacion de arbol de expresion binaria usando la expresion que se transforma a forma pre fija**/
         ExpressionTree et = new ExpressionTree();
         EncapsulationTree encapsulationTree = EncapsulationTree.getInstance();
@@ -25,7 +26,7 @@ public class ExpressionTreeTest {
 
         /**Create data with the expression, result, and date and time of the users input**/
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
-        System.out.println("Expresion: " + encapsulationTree.getInfix() + " Resultado: " + et.evaluate() + " Fecha y hora: " + dtf.format(LocalDateTime.now()));
+        System.out.println("\n Expresion: " + encapsulationTree.getInfix() + " Resultado: " + et.evaluate() + " Fecha y hora: " + dtf.format(LocalDateTime.now()));
     }
 
     public void method() {

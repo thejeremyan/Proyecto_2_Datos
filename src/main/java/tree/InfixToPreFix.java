@@ -71,9 +71,9 @@ public class    InfixToPreFix {
         System.out.println("Enter the expression: ");
         String exp= myObj.nextLine();
 
-        System.out.println("Expression Tree Test");
+        //System.out.println("Expression Tree Test");
         //String exp = infix;
-        System.out.println("Infix Expression: " + exp);
+        //System.out.println("Infix Expression: " + exp);
         System.out.println("Prefix Expression: " + infixToPreFix(exp));
 
         StringBuilder prefix_sb = infixToPreFix(exp);
@@ -85,6 +85,7 @@ public class    InfixToPreFix {
         encapsulationTree.setInfix(exp);
         encapsulationTree.setPrefix(prefix_string);
 
+        /**Instanciar "constructor artificial" del arbol**/
         ExpressionTreeTest test = new ExpressionTreeTest();
 
 
