@@ -1,5 +1,5 @@
 package tree;
-
+/**Class dedicated for methods especialized on getters and setters**/
 public class EncapsulationTree{
     private String prefix;
     private String infix;
@@ -14,24 +14,24 @@ public class EncapsulationTree{
         return SingletonHolder.encapsulationTree;
     }
 
-    // Getter infix
+    /**Getter infix**/
     public String getInfix() {
         return infix;
     }
 
-    // Setter infix
+    /**Setter infix**/
     public void setInfix(String newinfix) {
         this.infix = newinfix;
     }
-    // Getter prefix
+    /**Getter prefix**/
     public String getPrefix() {
         return prefix;
     }
 
-    // Setter prefix
+    /**Setter prefix**/
     public void setPrefix(String newprefix) {
         this.prefix = newprefix;
     }
 }
-/* Invoke object: EncapsulationTree encapsulationTree =EncapsulationTree.getInstance();*/
+/** Invoke object: EncapsulationTree encapsulationTree =EncapsulationTree.getInstance();**/
 
