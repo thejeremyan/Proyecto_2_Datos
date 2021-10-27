@@ -1,5 +1,6 @@
 package tree;
 
+import java.io.IOException;
 import java.util.Scanner;
 import java.util.Stack;
 
@@ -66,7 +67,7 @@ public class    InfixToPreFix {
 
 
     /**Constructor**/
-    public static void main(String[] args) {
+    public InfixToPreFix() throws IOException {
         Scanner myObj = new Scanner(System.in);
         System.out.println("Enter the expression: ");
         String exp= myObj.nextLine();
@@ -90,5 +91,8 @@ public class    InfixToPreFix {
 
 
     }
+
+    /**public static void main(String[] args) {
+    }**/
 }
 /**(8-5)*((4+2)/3)**/

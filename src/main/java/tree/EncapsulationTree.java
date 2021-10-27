@@ -1,8 +1,15 @@
 package tree;
+
+import java.io.FileWriter;
+import java.util.List;
+
 /**Class dedicated for methods especialized on getters and setters**/
 public class EncapsulationTree{
     private String prefix;
     private String infix;
+    private FileWriter csvWriter;
+
+
     private static class SingletonHolder {
         public static EncapsulationTree encapsulationTree = new EncapsulationTree();
     }
@@ -32,6 +39,17 @@ public class EncapsulationTree{
     public void setPrefix(String newprefix) {
         this.prefix = newprefix;
     }
+    public FileWriter getCsvWriter() {
+        return csvWriter;
+    }
+
+    public void setCsvWriter(FileWriter csvWriter) {
+        this.csvWriter = csvWriter;
+    }
+
+
+
+
 }
 /** Invoke object: EncapsulationTree encapsulationTree =EncapsulationTree.getInstance();**/
 
