@@ -39,10 +39,11 @@ public class EncapsulationTree{
     public void setPrefix(String newprefix) {
         this.prefix = newprefix;
     }
+    /**Getter csv**/
     public FileWriter getCsvWriter() {
         return csvWriter;
     }
-
+    /**Setter csv**/
     public void setCsvWriter(FileWriter csvWriter) {
         this.csvWriter = csvWriter;
     }

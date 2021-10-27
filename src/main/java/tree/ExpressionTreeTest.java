@@ -40,7 +40,7 @@ public class ExpressionTreeTest {
         //System.out.println("\n Expresion: " + encapsulationTree.getInfix() + " Resultado: " + et.evaluate() + " Fecha y hora: " + dtf.format(LocalDateTime.now()));
 
 
-        /**Traer de vuelta al .CSV**/
+        /**Traer de vuelta al .CSV e ingresar los datos del cliente**/
         encapsulationTree.getCsvWriter().append("Expresion: " + encapsulationTree.getInfix());
         encapsulationTree.getCsvWriter().append(",");
         encapsulationTree.getCsvWriter().append(" Resultado: " + et.evaluate());
@@ -49,16 +49,15 @@ public class ExpressionTreeTest {
         encapsulationTree.getCsvWriter().append("\n");
         encapsulationTree.getCsvWriter().flush();
         encapsulationTree.getCsvWriter().close();
-        Main1 main = new Main1();
+        //Main1 main = new Main1();
 
-
-        Scanner sc = new Scanner(new File("C:\\Users\\febel\\OneDrive - Estudiantes ITCR\\TEC\\II Semestre\\Datos 1\\Proyecto_2_Datos\\newo.csv"));
+        /**55-61 imprime el archivo .csv en la pantalla**/
+        Scanner sc = new Scanner(new File("C:\\Users\\febel\\OneDrive - Estudiantes ITCR\\TEC\\II Semestre\\Datos 1\\Proyecto_2_Datos\\new.csv"));
         sc.useDelimiter(",");   //sets the delimiter pattern
         while (sc.hasNext())  //returns a boolean value
         {
             System.out.print(sc.next());  //find and returns the next complete token from this scanner
         }
-
         sc.close();  //closes the scanner
 
 
