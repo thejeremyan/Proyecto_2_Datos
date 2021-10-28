@@ -1,7 +1,5 @@
 package tree; /**
- * Java Program to Implement Expression Tree Algorithm
- */
-/** Class ExpressionTree **/
+/** Clase ExpressionTree **/
 class ExpressionTree
 {
     /** constructor **/
@@ -9,7 +7,7 @@ class ExpressionTree
     {
         top = null;
     }
-    /** class TreeNode **/
+    /** clase TreeNode **/
     class TreeNode
     {
         char data;
@@ -24,7 +22,7 @@ class ExpressionTree
         }
     }
 
-    /** class StackNode **/
+    /** clase StackNode **/
     class StackNode
     {
         TreeNode treeNode;

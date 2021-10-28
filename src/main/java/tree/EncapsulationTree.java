@@ -9,6 +9,7 @@ public class EncapsulationTree{
     private String infix;
     private FileWriter csvWriter;
     private String resultado;
+    private String random;
 
     private static class SingletonHolder {
         public static EncapsulationTree encapsulationTree = new EncapsulationTree();
@@ -54,6 +55,13 @@ public class EncapsulationTree{
 
     public void setResultado(String resultado) {
         this.resultado = resultado;
+    }
+    public String getRandom() {
+        return random;
+    }
+
+    public void setRandom(String random) {
+        this.random = random;
     }
 
 

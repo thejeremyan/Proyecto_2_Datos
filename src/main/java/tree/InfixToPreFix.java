@@ -6,7 +6,7 @@ import java.util.Stack;
 
 public class    InfixToPreFix {
     static int precedence(char c) {
-        /**Priority of the expression operators**/
+        /**Prioridad de operaciones**/
         switch (c) {
             case '+':
             case '-':
@@ -17,7 +17,7 @@ public class    InfixToPreFix {
         }
         return -1;
     }
-    /**Is static so it isnt necessary to instantiate**/
+    /**No es necesario instanciar**/
     static StringBuilder infixToPreFix(String expression) {
 
         StringBuilder result = new StringBuilder();
@@ -39,7 +39,7 @@ public class    InfixToPreFix {
         for (int i = 0; i < charsExp.length; i++) {
             char c = charsExp[i];
 
-            /**Check if the element is an operator or an operand**/
+            /**Ver si es operador u operando**/
             if (precedence(c) > 0) {
                 while (stack.isEmpty() == false && precedence(stack.peek()) >= precedence(c)) {
                     result.append(stack.pop());
@@ -54,7 +54,7 @@ public class    InfixToPreFix {
             } else if (c == '(') {
                 stack.push(c);
             } else {
-                /**check if the character is different from operator or bracket**/
+                /**revisa si se ingresan letras*/
                 result.append(c);
             }
         }
