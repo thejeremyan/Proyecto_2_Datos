@@ -6,10 +6,11 @@ import tree.EncapsulationTree;
 import java.io.*;
 import java.util.Scanner;
 import java.util.Stack;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
-@WebServlet(name = "helloServlet", value = "/hello-servlet")
+@WebServlet(name = "calculadora", value = "/calculadora")
 public class HelloServlet extends HttpServlet {
 
     public void init() {
@@ -28,12 +29,15 @@ public class HelloServlet extends HttpServlet {
         Main1 main1 = new Main1();
 
         PrintWriter out = response.getWriter();
+        out.println("<html><body bgcolor = 'beige',text='black'><h1>Resultado</h1></body></html>");
 
-        out.println("<html><body>");
+
         //Imprime resultdo
-        out.println("<h1>" + encapsulationTree.getResultado() + "</h1>");
-
+        out.println("<h2>" + encapsulationTree.getResultado() + "</h2>");
         out.println("</body></html>");
+
+        String respuesta = encapsulationTree.getResultado();
+
     }
 
 

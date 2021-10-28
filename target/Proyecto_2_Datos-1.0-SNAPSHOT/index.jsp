@@ -6,14 +6,28 @@
 <head>
     <title>JSP - Hello World</title>
 </head>
-<body>
-<h1><%= "Hello World!" %></h1>
+<style>
+    table, th, td {
+        border: 0px solid black;
+        border-collapse: collapse;
+    }
 
-<table>
-    <form action="${pageContext.request.contextPath}/hello-servlet">
+    table.center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h1 {text-align: center;}
+</style>
+<body style="background-color:beige;">
+
+<h1><%= "Calculadora" %></h1>
+<table class="center">
+    <th><p style="color:red">Ingrese la operacion que quiere calcular</p>
+    <tr>
+        <th><form action="${pageContext.request.contextPath}/calculadora">
         Operacion: <input type="text" name="operacion">
-        <input type="submit" name="enviar">
-    </form>
+        <input type="submit" name="enviar" >
+       </form>
 </table>
 
 <br/>

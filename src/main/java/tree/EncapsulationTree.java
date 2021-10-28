@@ -14,7 +14,7 @@ public class EncapsulationTree{
         public static EncapsulationTree encapsulationTree = new EncapsulationTree();
     }
 
-    EncapsulationTree() {
+    public EncapsulationTree() {
     }
 
     public static EncapsulationTree getInstance() {
