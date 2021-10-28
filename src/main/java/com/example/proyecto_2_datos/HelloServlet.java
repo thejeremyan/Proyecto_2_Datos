@@ -1,27 +1,42 @@
 package com.example.proyecto_2_datos;
 
+import Main.Main1;
+import tree.EncapsulationTree;
+
 import java.io.*;
+import java.util.Scanner;
+import java.util.Stack;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
 @WebServlet(name = "helloServlet", value = "/hello-servlet")
 public class HelloServlet extends HttpServlet {
-    private String message;
 
     public void init() {
-        message = "Hello World!";
+        ;
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        EncapsulationTree encapsulationTree = EncapsulationTree.getInstance();
+
         response.setContentType("text/html");
 
-        // Hello
+        String resultado = request.getParameter("operacion");
+
+        encapsulationTree.setInfix(resultado);
+
+        Main1 main1 = new Main1();
+
         PrintWriter out = response.getWriter();
+
         out.println("<html><body>");
-        out.println("<h1>" + message + "</h1>");
+        //Imprime resultdo
+        out.println("<h1>" + encapsulationTree.getResultado() + "</h1>");
+
         out.println("</body></html>");
     }
 
-    public void destroy() {
-    }
+
+    public void destroy() {}
+
 }

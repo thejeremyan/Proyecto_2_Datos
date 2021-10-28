@@ -68,22 +68,15 @@ public class    InfixToPreFix {
 
     /**Constructor**/
     public InfixToPreFix() throws IOException {
-        Scanner myObj = new Scanner(System.in);
-        System.out.println("Enter the expression: ");
-        String exp= myObj.nextLine();
-
-        //System.out.println("Expression Tree Test");
-        //String exp = infix;
-        //System.out.println("Infix Expression: " + exp);
-        System.out.println("Prefix Expression: " + infixToPreFix(exp));
-
-        StringBuilder prefix_sb = infixToPreFix(exp);
-        String prefix_string = prefix_sb.toString();
-
         /**Encapsulamiento de infix y prefix**/
         EncapsulationTree encapsulationTree =EncapsulationTree.getInstance();
 
-        encapsulationTree.setInfix(exp);
+        System.out.println("Prefix Expression: " + infixToPreFix(encapsulationTree.getInfix()));
+
+        StringBuilder prefix_sb = infixToPreFix(encapsulationTree.getInfix());
+
+        String prefix_string = prefix_sb.toString();
+
         encapsulationTree.setPrefix(prefix_string);
 
         /**Instanciar "constructor artificial" del arbol**/

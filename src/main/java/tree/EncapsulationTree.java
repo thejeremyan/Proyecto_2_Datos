@@ -8,7 +8,7 @@ public class EncapsulationTree{
     private String prefix;
     private String infix;
     private FileWriter csvWriter;
-
+    private String resultado;
 
     private static class SingletonHolder {
         public static EncapsulationTree encapsulationTree = new EncapsulationTree();
@@ -48,6 +48,13 @@ public class EncapsulationTree{
         this.csvWriter = csvWriter;
     }
 
+    public String getResultado() {
+        return resultado;
+    }
+
+    public void setResultado(String resultado) {
+        this.resultado = resultado;
+    }
 
 
 

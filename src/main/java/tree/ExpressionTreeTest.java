@@ -49,10 +49,13 @@ public class ExpressionTreeTest {
         encapsulationTree.getCsvWriter().append("\n");
         encapsulationTree.getCsvWriter().flush();
         encapsulationTree.getCsvWriter().close();
-        //Main1 main = new Main1();
+
+        String resultado = String.valueOf(et.evaluate());
+
+        encapsulationTree.setResultado(resultado);
 
         /**55-61 imprime el archivo .csv en la pantalla**/
-        Scanner sc = new Scanner(new File("C:\\Users\\febel\\OneDrive - Estudiantes ITCR\\TEC\\II Semestre\\Datos 1\\Proyecto_2_Datos\\new.csv"));
+        Scanner sc = new Scanner(new File("C:\\Users\\Felipe\\Documents\\GitHub\\Proyecto_2_Datos\\new.csv"));
         sc.useDelimiter(",");   //sets the delimiter pattern
         while (sc.hasNext())  //returns a boolean value
         {
