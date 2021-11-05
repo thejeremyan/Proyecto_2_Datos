@@ -51,7 +51,7 @@ public class ExpressionTreeTest {
 
 
         /**55-61 imprime el archivo .csv en la pantalla**/
-        Scanner sc = new Scanner(new File("C:\\Users\\febel\\OneDrive - Estudiantes ITCR\\TEC\\II Semestre\\Datos 1\\Proyecto_2_Datos\\newo#.csv"));
+        Scanner sc = new Scanner(new File("C:\\Users\\febel\\OneDrive - Estudiantes ITCR\\TEC\\II Semestre\\Datos 1\\Proyecto_2_Datos\\datos.csv"));
         sc.useDelimiter(",");   //sets the delimiter pattern
         while (sc.hasNext())  //returns a boolean value
         {
