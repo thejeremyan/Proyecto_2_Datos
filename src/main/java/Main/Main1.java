@@ -11,7 +11,7 @@ public class Main1{
         EncapsulationTree encapsulationTree =EncapsulationTree.getInstance();
 
         /**Agregar titulos al archivo .csv**/
-        FileWriter csvWriter = new FileWriter("C:\\Users\\Felipe\\Documents\\GitHub\\Proyecto_2_Datos\\datos.csv",true);
+        FileWriter csvWriter = new FileWriter("C:\\Users\\febel\\OneDrive - Estudiantes ITCR\\TEC\\II Semestre\\Datos 1\\Proyecto_2_Datos\\datos.csv",true);
 
         /**Encapsular el archivo .csv**/
         encapsulationTree.setCsvWriter(csvWriter);
