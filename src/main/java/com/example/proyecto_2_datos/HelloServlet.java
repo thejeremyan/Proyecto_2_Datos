@@ -29,7 +29,7 @@ public class HelloServlet extends HttpServlet {
         Main1 main1 = new Main1();
 
         PrintWriter out = response.getWriter();
-        out.println("<html><body bgcolor = 'beige',text='black'><h1>Resultado</h1></body></html>");
+        out.println("<html><body bgcolor = 'beige',text='black'><h1> Resultado </h1></body></html>");
 
 
         //Imprime resultdo

@@ -31,6 +31,11 @@
 </table>
 
 <br/>
-
+<table class="center">
+        <tr>
+            <th><form action="${pageContext.request.contextPath}/Historial">
+                <input type="submit" name="Hist">
+            </form>
+</table>
 </body>
 </html>
